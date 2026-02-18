@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: code-ripple-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 4000
+      - key: CLIENT_URL
+        sync: false
