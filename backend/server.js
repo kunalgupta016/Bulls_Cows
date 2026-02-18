@@ -48,5 +48,5 @@ setupSocketHandlers(io);
 // Start server
 server.listen(PORT, () => {
   console.log(`\n  ✦ Code Ripple server running on port ${PORT}`);
-  console.log(`  ✦ Accepting connections from ${CLIENT_URL}\n`);
+  console.log(`  ✦ Accepting connections from ${CLIENT_URLS.join(', ')}\n`);
 });
